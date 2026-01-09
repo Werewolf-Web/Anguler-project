@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   templateUrl: './login.html',
   styleUrls: ['./login.css'],  // ✅ MUST be plural + array
 })
-export class Login {}
+export class UserLogin {}
 
 
 

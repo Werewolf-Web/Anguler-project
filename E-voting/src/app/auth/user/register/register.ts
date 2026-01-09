@@ -10,6 +10,6 @@ import { Component } from '@angular/core';
 })
 
 
-export class Register {
+export class UserRegister {
 
 }

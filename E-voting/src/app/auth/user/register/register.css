@@ -1,22 +1,4 @@
-        /* :root {
-            --bg-color: #E8FFD7;
-            --form-bg: #93DA97;
-            --text-color: #5E936C;
-            --heading-color: #3E5F44;
-            --input-bg: #f9fff7;
-        }
 
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            animation: fadeIn 1s ease-in;
-        } */
 .auth-wrapper {
   min-height: 100vh;
   display: flex;
