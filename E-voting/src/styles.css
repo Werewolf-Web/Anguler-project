@@ -7,6 +7,11 @@
   --input-bg: #f9fff7;
   --accent-color: #438b50;
   --hover-color: #4CAF50;
+   --panel-bg:  #93DA97;
+  --border: #c7d8c1;
+  --shadow: rgba(0, 0, 0, 0.15);
+  --accent: #438b50;
+  --white: #ffffff;
 }
 
 * {
@@ -29,4 +34,3 @@ body {
   justify-content: center;
   align-items: center;
 }
-  
