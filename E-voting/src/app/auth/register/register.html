@@ -1,0 +1,40 @@
+
+<div class="auth-wrapper ">
+    <div class="form-container">
+        <h2>Register Here</h2>
+        <form action="#" method="POST" enctype="multipart/form-data">
+
+            <label for="id">ID Number:</label>
+            <input type="text" id="id" name="id" required>
+
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="name" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="3" required></textarea>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="number" pattern="[0-9]{10}" maxlength="10" required>
+
+            <label for="password">Create Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="password">Conform Password:</label>
+            <input type="password" id="cpassword" name="cpassword" required>
+
+            <label for="photo">Upload Photo:</label>
+            <input type="file" id="photo" name="photo" required>
+
+
+
+
+            <div class="button-wrapper">
+                <button type="submit">Submit</button>
+            </div>
+
+            <div class="login-link">
+                Already have an account? <a href="/login">Login</a>
+            </div>
+        </form>
+    </div>
+</div>
