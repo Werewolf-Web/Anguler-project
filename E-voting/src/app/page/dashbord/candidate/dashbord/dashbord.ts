@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-dashbord',
-  imports: [],
+  standalone: true,
   templateUrl: './dashbord.html',
-  styleUrl: './dashbord.css',
+  styleUrls: ['./dashbord.css'],
 })
-export class Dashbord {
+export class CandidateDashbord {
 
 }
