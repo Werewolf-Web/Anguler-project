@@ -1,1 +1,141 @@
-<p>dashbord works!</p>
+<div class="layout">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="brand">Admin Panel</div>
+
+    <div class="meta">
+      <div class="meta-item">
+        <span>Total Users</span>
+        <span class="badge">0</span>
+      </div>
+      <div class="meta-item">
+        <span>Total Candidates</span>
+        <span class="badge">0</span>
+      </div>
+      <div class="meta-item">
+        <span>Last Refresh</span>
+        <span>2024-01-01 10:00</span>
+      </div>
+    </div>
+
+    <ul class="nav">
+      <li><a href="user/login">Users</a></li>
+      <li><a href="candidate/login">Candidates</a></li>
+      <li><a href="home">Home</a></li>
+      <li><a href="candidate/register">Candidate Registration</a></li>
+    </ul>
+
+    <div class="footer">Voting System</div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="content">
+
+    <!-- USERS -->
+    <section id="users" class="card">
+      <div class="top-actions">
+        <h2>All Users</h2>
+        <span class="badge">0</span>
+        <span class="muted">Showing full details (excluding passwords)</span>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Photo</th>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Address</th>
+              <th>Mobile</th>
+              <th>Status</th>
+              <th>Vote</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <!-- Example Row -->
+            <tr>
+              <td><span class="muted">No photo</span></td>
+              <td>1</td>
+              <td>John Doe</td>
+              <td>Sample Address</td>
+              <td>9876543210</td>
+              <td><span class="badge">Active</span></td>
+              <td>0</td>
+              <td>
+                <button class="delete-btn" style="background:#0d6efd;">Edit</button>
+                <button class="delete-btn">Delete</button>
+              </td>
+            </tr>
+
+            <!-- Empty State -->
+            <!--
+            <tr>
+              <td colspan="8" class="muted">No users found.</td>
+            </tr>
+            -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- CANDIDATES -->
+    <section id="candidates" class="card">
+      <div class="top-actions">
+        <h2>All Candidates</h2>
+        <span class="badge">0</span>
+        <span class="muted">Showing full details (excluding passwords)</span>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Logo</th>
+              <th>CID</th>
+              <th>Full Name</th>
+              <th>Address</th>
+              <th>Phone</th>
+              <th>Age</th>
+              <th>Party</th>
+              <th>Intention</th>
+              <th>Status</th>
+              <th>Vote</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <!-- Example Row -->
+            <tr>
+              <td><span class="muted">No logo</span></td>
+              <td>101</td>
+              <td>Jane Smith</td>
+              <td>City Area</td>
+              <td>9123456789</td>
+              <td>45</td>
+              <td>Sample Party</td>
+              <td>Development & Growth</td>
+              <td><span class="badge">Approved</span></td>
+              <td>0</td>
+              <td>
+                <button class="delete-btn" style="background:#0d6efd;">Edit</button>
+                <button class="delete-btn">Delete</button>
+              </td>
+            </tr>
+
+            <!-- Empty State -->
+            <!--
+            <tr>
+              <td colspan="11" class="muted">No candidates found.</td>
+            </tr>
+            -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+</div>

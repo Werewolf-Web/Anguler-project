@@ -8,6 +8,7 @@ import { CandidateRegister } from './auth/candidate/register/register';
 import { AdminLogin } from './auth/admin/login/login';
 import { CandidateDashbord } from './page/dashbord/candidate/dashbord/dashbord';
 import { UserDashbord } from './page/dashbord/user/dashbord/dashbord';
+import { AdminDashbord } from './page/dashbord/admin/dashbord/dashbord';
 
 export const routes: Routes = [
   { path: 'user/login', component: UserLogin },
@@ -17,6 +18,7 @@ export const routes: Routes = [
     { path: 'admin/login', component: AdminLogin },
   {path:'home',component: Home},
 {path:'candidate/dashbord' ,component:CandidateDashbord},
-{path:'user/dashbord' , component:UserDashbord}
+{path:'user/dashbord' , component:UserDashbord},
+  { path: 'admin/dashbord', component: AdminDashbord }
 
 ];

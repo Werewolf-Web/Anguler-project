@@ -1,0 +1,201 @@
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        .layout {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Vertical Navbar */
+        .sidebar {
+            width: 260px;
+            background: var(--panel-bg);
+            padding: 24px 18px;
+            box-shadow: 2px 0 12px var(--shadow);
+            position: sticky;
+            top: 0;
+            height: 100vh;
+        }
+
+        .brand {
+            color: var(--heading-color);
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 18px;
+        }
+
+        .meta {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 12px;
+            margin-bottom: 18px;
+            box-shadow: 0 2px 8px var(--shadow);
+        }
+
+        .meta-item {
+            display: flex;
+            justify-content: space-between;
+            margin: 6px 0;
+            color: var(--heading-color);
+            font-weight: 600;
+        }
+
+        .nav {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav a {
+            display: block;
+            text-decoration: none;
+            color: var(--heading-color);
+            padding: 10px 12px;
+            border-radius: 8px;
+            margin: 4px 0;
+            background: rgba(255, 255, 255, 0.5);
+            border: 1px solid var(--border);
+            transition: background 0.2s ease, transform 0.1s ease;
+        }
+
+        .nav a:hover {
+            background: var(--white);
+            transform: translateX(2px);
+        }
+
+        /* Main */
+        .content {
+            flex: 1;
+            padding: 24px;
+        }
+
+        .card {
+            background: var(--panel-bg);
+            padding: 18px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px var(--shadow);
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            color: var(--heading-color);
+            margin: 0 0 12px;
+        }
+
+        .table-wrap {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        thead {
+            background: #d7f2db;
+        }
+
+        th,
+        td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+            vertical-align: top;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .img-thumb {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 999px;
+            background: #e9f7ec;
+            color: var(--accent);
+            font-weight: 700;
+            font-size: 12px;
+            border: 1px solid #bfe5c6;
+        }
+
+        .delete-btn {
+            padding: 4px 8px;
+            background: #d9534f;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .delete-btn:hover {
+            background: #c9302c;
+        }
+
+        .top-actions {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            margin-bottom: 10px;
+            color: var(--heading-color);
+        }
+
+        .muted {
+            color: #4e6b56;
+            font-size: 14px;
+        }
+
+        .footer {
+            text-align: center;
+            color: var(--heading-color);
+            padding: 16px 0 0;
+            font-size: 12px;
+        }
+
+        @media (max-width: 900px) {
+            .sidebar {
+                position: fixed;
+                z-index: 10;
+            }
+
+            .content {
+                margin-left: 260px;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .sidebar {
+                width: 210px;
+            }
+
+            .content {
+                margin-left: 210px;
+                padding: 14px;
+            }
+
+            th,
+            td {
+                font-size: 14px;
+            }
+        }

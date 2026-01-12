@@ -4,8 +4,8 @@ import { Component } from '@angular/core';
   selector: 'app-dashbord',
   imports: [],
   templateUrl: './dashbord.html',
-  styleUrl: './dashbord.css',
+  styleUrls: ['./dashbord.css'],
 })
-export class Dashbord {
+export class AdminDashbord {
 
 }
