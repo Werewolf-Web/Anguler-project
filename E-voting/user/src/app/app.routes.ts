@@ -16,9 +16,9 @@ export const routes: Routes = [
    { path: 'candidate/login', component: CandidateLogin },
   { path: 'candidate/register', component: CandidateRegister },
     { path: 'admin/login', component: AdminLogin },
-  {path:'home',component: Home},
-{path:'candidate/dashbord' ,component:CandidateDashbord},
-{path:'user/dashbord' , component:UserDashbord},
-  { path: 'admin/dashbord', component: AdminDashbord }
+  {path:'',component: Home},
+{path:'dashbord/candidate' ,component:CandidateDashbord},
+{path:'dashbord/user' , component:UserDashbord},
+  { path: 'dashbord/admin', component: AdminDashbord }
 
 ];
